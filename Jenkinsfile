@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh 'nodejs -v'
         sh 'npm -v'
+        tool 'Nodejs'
       }
     }
 
