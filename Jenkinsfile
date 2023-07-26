@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Tool install') {
+    stage('check env') {
       steps {
         sh 'nodejs -v'
+        sh 'npm -v'
       }
     }
 
